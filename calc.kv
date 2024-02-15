@@ -1,0 +1,228 @@
+MainWindow:
+<MainWindow>:
+    GridLayout:
+        cols:1
+        pos:10, 200
+        TextInput:
+            id:calc_input
+            text:'0'
+            multiline: False
+            size_hint:None, None
+            width:'280dp'
+            height:'100dp'
+            font_size:'40'
+            font_name:'Lcd.ttf'
+    GridLayout:    
+        cols:5
+        pos:0, 81
+        Button:
+            text:'MC'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)
+        Button:
+            text:'MR'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)
+        Button:
+            text:'MS'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)
+        Button:
+            text:'M+'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)         
+        Button:
+            text:'M-'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)
+        Button:
+            text:u'\u00AB'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.remove()
+        Button:
+            text:'CE'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.clear()
+        Button:
+            text:'C'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.clear()
+        Button:
+            text:'+/-'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.pos_neg()         
+        Button:
+            text:u"\u221A"
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press('sqrt()')
+        Button:
+            text:'7'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(7)
+        Button:
+            text:'8'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(8)
+        Button:
+            text:'9'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(9)
+        Button:
+            text:'DEL'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'  
+            on_press:root.remove()       
+        Button:
+            text:'AC'
+            color:'orange'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.clear()
+        Button:
+            text:'4'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(4)
+        Button:
+            text:'5'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(5)
+        Button:
+            text:'6'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(6)
+        Button:
+            text:'*'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.math_sign('*')
+        Button:
+            text:'/'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.math_sign('/')
+        Button:
+            text:'1'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(1)
+        Button:
+            text:'2'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(2)
+        Button:
+            text:'3'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(3)
+        Button:
+            text:'+'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.math_sign('+')
+        Button:
+            text:'-'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.math_sign('-')
+        Button:
+            text:'0'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.button_press(0)
+        Button:
+            text:'.'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.dot()
+        Button:
+            text:'%'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.equals()
+        Button:
+            text:'Ans'
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.equals()
+        Button:
+            text:'='
+            size_hint:None, None
+            width:'60dp'
+            height:'30dp'
+            font_size:'20dp'
+            on_press:root.equals()
